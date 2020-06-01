@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.details-input {
+  font-family: 'Times New Roman', Times, serif;
+  color:  rgb(54, 53, 53);
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  font-size: 18px;
+  width: 100%;
+}
+
+

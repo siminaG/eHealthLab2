@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  font-family: Calibri;
+  color:black;
+  background: lightgray;
+}
+
+.filter{
+  width: 100%
+}
+button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+td,th {
+  color: black;
+  font-size: 20px;
+}

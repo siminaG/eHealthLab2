@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.home{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color: purple;
+}
+
+.toolbar{
+  text-shadow: lightgray;
+  font-weight: bold;
+}

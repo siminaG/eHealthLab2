@@ -1,0 +1,12 @@
+<div class="container">
+ <mat-toolbar color="primary">
+   <button mat-button [matMenuTriggerFor]="menu" class="toolbar">Menu</button>
+   <mat-menu #menu="matMenu">
+     <button mat-menu-item (click)="btnMenu('table')">Patients</button>
+     <button mat-menu-item (click)="btnMenu('medication')">Medication</button>
+   </mat-menu>
+ </mat-toolbar>
+  <div class="home">
+    <h2>Welcome!</h2>
+  </div>
+</div>
