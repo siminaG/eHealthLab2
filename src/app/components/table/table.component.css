@@ -14,7 +14,7 @@ table {
 .filter{
   width: 100%
 }
-button {
+.button {
   background-color: green;
   border: none;
   color: white;

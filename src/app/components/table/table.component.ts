@@ -54,4 +54,7 @@ export class TableComponent implements OnInit {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
+  btnMenu(path: string) {
+    this.router.navigateByUrl('/' + path);
+  };
 }

@@ -1,4 +1,11 @@
 <div class="container">
+  <mat-toolbar color="primary">
+    <button mat-button [matMenuTriggerFor]="menu" class="toolbar">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="btnMenu('table')">Patients</button>
+      <button mat-menu-item (click)="btnMenu('medication')">Medication</button>
+    </mat-menu>
+  </mat-toolbar>
   <h2>Patient Details</h2>
   <form class="example-form">
     <mat-form-field class="example-full-width">
@@ -9,25 +16,14 @@
       <h3>Care Plan: </h3>
       <input matInput [readonly]="true" value="{{patientCarePlan}}">
     </mat-form-field>
-<!--    <mat-form-field class="example-full-width">-->
-<!--      <h3>Gender: </h3>-->
-<!--      <input matInput [readonly]="true" value="{{patient.gender}}">-->
-<!--    </mat-form-field>-->
-<!--    <mat-form-field class="example-full-width">-->
-<!--      <h3>Diagnosis Code: </h3>-->
-<!--      <input matInput [readonly]="true" value="{{patient.diagnosis_code}}">-->
-<!--    </mat-form-field>-->
-<!--    <mat-form-field class="example-full-width">-->
-<!--      <h3>Diagnosis Description: </h3>-->
-<!--      <input matInput [readonly]="true" value="{{patient.diagnosis_description}}">-->
-<!--    </mat-form-field>-->
-<!--    <mat-form-field class="example-full-width">-->
-<!--      <h3>Diagnosis Description Detailed: </h3>-->
-<!--      <input matInput [readonly]="true" value="{{patient.diagnosis_description_detailed}}">-->
-<!--    </mat-form-field>-->
-<!--    <mat-form-field class="example-full-width">-->
-<!--      <h3>Administrated Drug Treatment: </h3>-->
-<!--      <input matInput [readonly]="true" value="{{patient.administered_drug_treatment}}">-->
-<!--    </mat-form-field>-->
+    <mat-form-field class="example-full-width">
+      <h3>Appointment Info: </h3>
+      <input matInput [readonly]="true" value="{{patientAppointment}}">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <h3>Allergy Intolerance: </h3>
+      <input matInput [readonly]="true" value="{{patientAllergyIntolerance}}">
+    </mat-form-field>
+
   </form>
 </div>
