@@ -10,6 +10,6 @@ export class MedicineService {
   constructor(private http: HttpClient) { }
 
   public getMedication(): Observable<any> {
-    return this.http.get<any>('http://hapi.fhir.org/baseR4/Medication');
+    return this.http.get<any>('https://hapi.fhir.org/baseR4/Medication');
   };
 }

@@ -13,26 +13,26 @@ export class PatientsService {
   constructor(private http: HttpClient) { }
 
   public getPatients(): Observable<any> {
-      return this.http.get<any>('http://hapi.fhir.org/baseR4/Patient?_format=json&_pretty=true');
+      return this.http.get<any>('https://hapi.fhir.org/baseR4/Patient?_format=json&_pretty=true');
   };
 
   public getEncounters(patient: string): Observable<any> {
-    return this.http.get<any>('http://hapi.fhir.org/baseR4/Encounter?', {
+    return this.http.get<any>('https://hapi.fhir.org/baseR4/Encounter?', {
       params: {patient}});
   };
 
   public getCarePlan(patient: string): Observable<any> {
-    return this.http.get<any>('http://hapi.fhir.org/baseR4/CarePlan', {
+    return this.http.get<any>('https://hapi.fhir.org/baseR4/CarePlan', {
       params: {patient}});
   };
 
   public getAppointment(patient: string): Observable<any> {
-    return this.http.get<any>('http://hapi.fhir.org/baseR4/Appointment', {
+    return this.http.get<any>('https://hapi.fhir.org/baseR4/Appointment', {
       params: {patient}});
   };
 
   public getAllergyIntolerance (patient: string): Observable<any> {
-    return this.http.get<any>('http://hapi.fhir.org/baseR4/AllergyIntolerance', {
+    return this.http.get<any>('https://hapi.fhir.org/baseR4/AllergyIntolerance', {
       params: {patient}});
   };
 }
